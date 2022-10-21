@@ -66,17 +66,32 @@ class PasswordValidationTest {
     }
 
     /**
-     * an extra test other than the given requrement for missing special character/symbol
+     * an extra test other than the given requirement for missing special character/symbol
      */
     @Test
-    public void validatePassword_Missing_OneSymbol() {
+    public void validatePassword_Valid() {
         // setup
-        String password = "Abcdefge5";
+        String password = "Abcdefge@";
 
         // execute
         boolean actual = PasswordValidation.isValid(password);
 
         // assert
         Assertions.assertFalse(actual);
+    }
+
+    /**
+     * test case for valid password
+     */
+    @Test
+    public void validatePassword_Missing_OneSymbol() {
+        // setup
+        String password = "I@md0ne99";
+
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertTrue(actual);
     }
 }

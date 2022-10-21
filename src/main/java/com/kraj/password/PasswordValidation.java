@@ -92,6 +92,7 @@ public class PasswordValidation {
                 || password.contains("|"))) {
             return false;
         }
+        // if all conditions fails
         return true;
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16441192-16aa-4c4b-8a06-5fb28c40ff17" name="Changes" comment="test case for one password length validation">
+    <list default="true" id="16441192-16aa-4c4b-8a06-5fb28c40ff17" name="Changes" comment="test case for missing digit 0-9 and added extra test for special character  validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kraj/password/PasswordValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kraj/password/PasswordValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kraj/password/PasswordValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kraj/password/PasswordValidationTest.java" afterDir="false" />
@@ -138,29 +138,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PasswordValidationTest.validatePassword_Missing_OneLowerCaseLetter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_Missing_OneLowerCaseLetter&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="PasswordValidationTest.validatePassword_Missing_OneNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,7 +161,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PasswordValidationTest.validatePassword_Missing_OneUpperCaseLetter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PasswordValidationTest.validatePassword_Missing_OneSymbol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +174,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_Missing_OneUpperCaseLetter&quot;" />
+            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_Missing_OneSymbol&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PasswordValidationTest.validatePassword_Valid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_Valid&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,10 +210,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PasswordValidationTest" />
+        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneSymbol" />
+        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Valid" />
         <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneNumber" />
         <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Length" />
-        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneUpperCaseLetter" />
-        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneLowerCaseLetter" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666340915438</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test case for missing digit 0-9 and added extra test for special character  validation">
+      <created>1666342364646</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666342364646</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +272,8 @@
     <MESSAGE value="initial tests  for null and empty check" />
     <MESSAGE value="test case and code for one UPPER/Lower case check" />
     <MESSAGE value="test case for one password length validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="test case for one password length validation" />
+    <MESSAGE value="test case for missing digit 0-9 and added extra test for special character  validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="test case for missing digit 0-9 and added extra test for special character  validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
