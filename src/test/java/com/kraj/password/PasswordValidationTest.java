@@ -18,4 +18,28 @@ class PasswordValidationTest {
             Assertions.assertFalse(PasswordValidation.isValid(""));
 
         }
+
+    @Test
+    public void validatePassword_Missing_OneUpperCaseLetter() {
+        // setup
+        String password = "abcdefg5#";
+
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertFalse(actual);
+    }
+
+    @Test
+    public void validatePassword_Missing_OneLowerCaseLetter() {
+        // setup
+        String password = "ABCDEFG5#";
+
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertFalse(actual);
+    }
 }
