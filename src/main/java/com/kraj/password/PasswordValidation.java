@@ -60,7 +60,38 @@ public class PasswordValidation {
                 return false;
             }
         }
+        if (true) {
+            int count = 0;
 
+            // check digits from 0 to 9
+            for (int i = 0; i <= 9; i++) {
+
+                // to convert int to string
+                String str1 = Integer.toString(i);
+
+                if (password.contains(str1)) {
+                    count = 1;
+                }
+            }
+            if (count == 0) {
+                return false;
+            }
+        }
+
+        // for special characters
+        if (!(password.contains("@") || password.contains("#")
+                || password.contains("!") || password.contains("~")
+                || password.contains("$") || password.contains("%")
+                || password.contains("^") || password.contains("&")
+                || password.contains("*") || password.contains("(")
+                || password.contains(")") || password.contains("-")
+                || password.contains("+") || password.contains("/")
+                || password.contains(":") || password.contains(".")
+                || password.contains(", ") || password.contains("<")
+                || password.contains(">") || password.contains("?")
+                || password.contains("|"))) {
+            return false;
+        }
         return true;
     }
 }

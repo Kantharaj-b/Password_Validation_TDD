@@ -52,4 +52,31 @@ class PasswordValidationTest {
         // assert
         Assertions.assertFalse(actual);
     }
+
+    @Test
+    public void validatePassword_Missing_OneNumber() {
+        // setup
+        String password = "Abcffggg#";
+
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertFalse(actual);
+    }
+
+    /**
+     * an extra test other than the given requrement for missing special character/symbol
+     */
+    @Test
+    public void validatePassword_Missing_OneSymbol() {
+        // setup
+        String password = "Abcdefge5";
+
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertFalse(actual);
+    }
 }
