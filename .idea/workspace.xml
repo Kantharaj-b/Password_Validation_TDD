@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16441192-16aa-4c4b-8a06-5fb28c40ff17" name="Changes" comment="initial tests  for null and empty check">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="16441192-16aa-4c4b-8a06-5fb28c40ff17" name="Changes" comment="test case and code for one UPPER/Lower case check">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kraj/password/PasswordValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kraj/password/PasswordValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kraj/password/PasswordValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kraj/password/PasswordValidationTest.java" afterDir="false" />
     </list>
@@ -91,7 +90,7 @@
       <recent name="com.kraj.password" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PasswordValidationTest">
+  <component name="RunManager" selected="Gradle.PasswordValidationTest.validatePassword_Length">
     <configuration name="PasswordValidationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,7 +114,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PasswordValidationTest.validatePassword_EmptyString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PasswordValidationTest.validatePassword_Length" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_EmptyString&quot;" />
+            <option value="&quot;com.kraj.password.PasswordValidationTest.validatePassword_Length&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Length" />
         <item itemvalue="Gradle.PasswordValidationTest" />
         <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneUpperCaseLetter" />
         <item itemvalue="Gradle.PasswordValidationTest.validatePassword_Missing_OneLowerCaseLetter" />
         <item itemvalue="Gradle.Password_Validation_TDD [clean]" />
-        <item itemvalue="Gradle.PasswordValidationTest.validatePassword_EmptyString" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666339503520</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test case and code for one UPPER/Lower case check">
+      <created>1666340552261</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666340552261</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +253,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial tests  for null and empty check" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial tests  for null and empty check" />
+    <MESSAGE value="test case and code for one UPPER/Lower case check" />
+    <option name="LAST_COMMIT_MESSAGE" value="test case and code for one UPPER/Lower case check" />
   </component>
 </project>

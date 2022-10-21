@@ -18,7 +18,17 @@ class PasswordValidationTest {
             Assertions.assertFalse(PasswordValidation.isValid(""));
 
         }
+    @Test
+    public void validatePassword_Length() {
+        // setup
+        String password = "Abcfg5#";
 
+        // execute
+        boolean actual = PasswordValidation.isValid(password);
+
+        // assert
+        Assertions.assertFalse(actual);
+    }
     @Test
     public void validatePassword_Missing_OneUpperCaseLetter() {
         // setup

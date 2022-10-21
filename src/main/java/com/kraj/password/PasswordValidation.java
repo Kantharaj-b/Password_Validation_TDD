@@ -16,6 +16,13 @@ public class PasswordValidation {
         if (password.isEmpty()) {
             return false;
         }
+
+        // for checking if password length
+        // is > 8
+        if (!(password.length() > 8)) {
+            return false;
+        }
+
         if (true) {
             int count = 0;
 
